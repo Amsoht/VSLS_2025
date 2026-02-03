@@ -13,8 +13,8 @@ channels = ["conda-forge"]
 platforms = ["win-64"]
 
 [tool.pixi.pypi-dependencies]
-vsls_2025 = { path = ".", editable = true }
-iau-baseline = { path = 'c:\GitHub\Python_Projects\IAU_baseline', editable = true }
+vsls_2025 = { path = "src", editable = true }
+iau-baseline = { path = "c:\\GitHub\\Python_Projects\\IAU_baseline", editable = true }
 
 [tool.pixi.tasks]
 
@@ -25,3 +25,12 @@ pip = ">=26.0,<27"
 ipykernel = ">=7.1.0,<8"
 netcdf4 = ">=1.7.4,<2"
 h5netcdf = ">=1.8.1,<2"
+numpy = ">=2.4.2,<3"
+matplotlib = ">=3.10.8,<4"
+scipy = ">=1.17.0,<2"
+ipympl = ">=0.10.0,<0.11"
+seaborn = ">=0.13.2,<0.14"
+holoviews = ">=1.22.1,<2"
+bokeh = ">=3.8.2,<4"
+nbstripout = ">=0.9.0,<0.10"
+nbdime = ">=4.0.3,<5"

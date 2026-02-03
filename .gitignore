@@ -1,3 +1,25 @@
 # pixi environments
 .pixi/*
 !.pixi/config.toml
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# notebooks
+.ipynb_checkpoints/
+
+# data
+data/raw/
+data/interim/
+data/processed/
+
+# dvc
+.dvc/cache/
+
+# editors / os
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
