@@ -1,0 +1,4 @@
+[project]
+name = "vsls_2025"
+version = "0.0.1"
+dependencies = ["numpy", "scipy"]
