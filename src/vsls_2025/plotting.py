@@ -1,5 +1,5 @@
 # =========================
-# 2️⃣ Imports
+# Imports
 # =========================
 import matplotlib.pyplot as plt
 import holoviews as hv
@@ -8,7 +8,7 @@ from IPython.display import display
 import numpy as np
 
 # =========================
-# 3️⃣ Wrapper Funktion
+# Wrapper Funktion
 # =========================
 def run_interactive(
     runfunc,
@@ -29,12 +29,12 @@ def run_interactive(
     plt.ion()  # Interactive mode ON - verhindert automatisches Display
     
     figs_before = set(plt.get_fignums())
-    result = func(*args, **kwargs)
+    result = runfunc(*args, **kwargs)
     figs_after = set(plt.get_fignums())
     
     new_figs = [plt.figure(i) for i in sorted(figs_after - figs_before)]
     
-    print(f"🔍 Gefangene Figures: {len(new_figs)}")
+    print(f"Gefangene Figures: {len(new_figs)}")
     
     hv_objs = []
     
@@ -106,7 +106,7 @@ def run_interactive(
                 hv_objs.append((title, combined))
     
     if not hv_objs:
-        print("⚠️ Keine plottbaren Objekte gefunden.")
+        print("Keine plottbaren Objekte gefunden.")
     else:
         if layout == "dropdown":
             # Dropdown-Menü statt Tabs
@@ -116,7 +116,7 @@ def run_interactive(
         else:  # column
             panel = hv.Layout([obj for _, obj in hv_objs]).cols(1)
         
-        # 🔥 WICHTIG: shared_axes=False
+        # WICHTIG: shared_axes=False
         panel = panel.opts(shared_axes=False)
         
         display(panel)
@@ -131,7 +131,7 @@ def run_interactive(
     return result
 
 # =========================
-# 4️⃣ Anwendung
+# Anwendung
 # =========================
 
 # Angenommen, du hast:
