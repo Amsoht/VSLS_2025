@@ -1,4 +1,6 @@
 [core]
     remote = vsls2025-data
+[cache]
+    type = copy
 ['remote "vsls2025-data"']
     url = C:\GitHub\Python_Projects\VSLS_2025_data
