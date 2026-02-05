@@ -11,14 +11,14 @@ __pycache__/
 .ipynb_checkpoints/
 
 # data
-data/raw/**
+data/raw/*.nc
 data/interim/**
 data/processed/**
 
-# but keep DVC metafiles
-!data/raw/**/*.dvc
-!data/interim/**/*.dvc
-!data/processed/**/*.dvc
+# # but keep DVC metafiles
+# !data/raw/**/*.dvc
+# !data/interim/**/*.dvc
+# !data/processed/**/*.dvc
 
 # dvc
 .dvc/cache/
