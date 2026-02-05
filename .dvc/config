@@ -1,0 +1,4 @@
+[core]
+    remote = vsls2025-data
+['remote "vsls2025-data"']
+    url = C:\GitHub\Python_Projects\VSLS_2025_data

@@ -15,6 +15,11 @@ data/raw/
 data/interim/
 data/processed/
 
+# but keep DVC metafiles
+!data/raw/**/*.dvc
+!data/interim/**/*.dvc
+!data/processed/**/*.dvc
+
 # dvc
 .dvc/cache/
 
