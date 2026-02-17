@@ -14,7 +14,7 @@ platforms = ["win-64"]
 
 [tool.pixi.pypi-dependencies]
 vsls_2025 = { path = "src", editable = true }
-iau-baseline = { path = "c:\\GitHub\\Python_Projects\\IAU_baseline", editable = true }
+iau-baseline = { url = "https://zenodo.org/records/18668744/files/AtmosphericAngels/IAU_baseline-v1.0.1.zip" }
 
 [tool.pixi.tasks]
 
