@@ -1,6 +1,8 @@
 [core]
-    remote = vsls2025-data
+    remote = hessenbox
 [cache]
     type = copy
 ['remote "vsls2025-data"']
     url = C:\GitHub\Python_Projects\VSLS_2025_data
+['remote "hessenbox"']
+    url = webdavs://next.hessenbox.de/remote.php/dav/files/wagenhae%40uni-frankfurt.de/VSLS_2025_data
